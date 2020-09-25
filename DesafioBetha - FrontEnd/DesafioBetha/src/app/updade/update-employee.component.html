@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3">
+    <h1 style="margin-top: 30px">Alteração de Serviço</h1>
+    <form (ngSubmit)="onSubmit()" style="margin-top: 30px; margin-bottom: 50px;">
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Status</label>
+            <select class="form-control" id="pendente_fl" [(ngModel)]="employee.pendente_fl" name="pendente_fl">
+                <option>Pendente</option>
+                <option>Concluído</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>inicio</label>
+            <input type="datetime-local" class="form-control" id="inicio" [(ngModel)]="employee.inicio" name="inicio">
+        </div>
+
+        <div class="form-group">
+            <label>fim</label>
+            <input type="datetime-local" class="form-control" id="fim" [(ngModel)]="employee.fim" name="fim">
+        </div>
+
+
+        <button class="btn btn-success" type="submit">Enviar</button>
+        <button class="btn-sm btn-secondary" type="button" (click)="voltar()" style="margin-left: 10px;">Voltar</button>
+
+    </form>
+
+</div>

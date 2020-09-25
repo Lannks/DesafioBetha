@@ -1,0 +1,45 @@
+<div class="col-md-6 offset-md-3">
+    <h1 style="margin-top: 30px">Cadastro de Serviço</h1>
+    <form (ngSubmit)="onSubmit()" style="margin-top: 30px; margin-bottom: 50px;">
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" id="nome" [(ngModel)]="employee.nome" name="nome">
+        </div>
+
+        <div class="form-group">
+            <label>Endereço</label>
+            <input type="text" class="form-control" id="endereco" [(ngModel)]="employee.endereco" name="endereco">
+        </div>
+
+        <div class="form-group">
+            <label>Telefone</label>
+            <input type="text" class="form-control" id="telefone" [(ngModel)]="employee.telefone" name="telefone">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="employee.email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label>tipo</label>
+            <input type="text" class="form-control" id="tipo" [(ngModel)]="employee.tipo" name="tipo">
+        </div>
+
+        <div class="form-group">
+            <label>marca</label>
+            <input type="text" class="form-control" id="marca" [(ngModel)]="employee.marca" name="marca">
+        </div>
+
+        <div class="form-group">
+            <label>Problema</label>
+            <textarea type="text" class="form-control" id="problema" [(ngModel)]="employee.problema" name="problema"></textarea>
+        </div>
+
+        
+        <button class="btn btn-success" type="submit">Enviar</button>
+        <button class="btn btn-secondary" type="button" (click)="voltar()" style="margin-left: 10px;" >Voltar</button>
+
+    </form>
+</div>

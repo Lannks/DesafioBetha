@@ -1,0 +1,35 @@
+<div class="container">
+    <h1 class="align-middle" style="margin-top: 30px">Listagem de Serviços</h1>
+
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Status</label>
+        <select class="form-control" id="pendente_fl">
+            <option>Todos</option>
+            <option>Pendente</option>
+            <option>Concluído</option>
+        </select>
+    </div>
+    
+    <table class="table table-striped" style="margin-top: 30px">
+        <thead>
+            <th> nome</th>
+            <th> endereco</th>
+            <th> telefone</th>
+            <th> email</th>
+            <th> Ações</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees | filtro: filterUser">
+                <td>{{ employee.nome }}</td>
+                <td>{{ employee.endereco }}</td>
+                <td>{{ employee.telefone }}</td>
+                <td>{{ employee.email }}</td>
+                <td>
+                    <button (click)="updateEmployee(employee.id)" class="btn btn-info">Alterar</button>
+                    <button (click)="viewEmployee(employee.id)" class="btn btn-success"
+                        style="margin-left: 10px">Informações</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,76 @@
+<div class="col-md-6 offset-md-3">
+    <h1 class="align-middle" style="margin-top: 30px">Informações do Serviço</h1>
+
+    <div class="input-group mb-3" style="margin-top: 30px; margin-bottom: 50px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Nome</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.nome}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Endereço</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.endereco}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Telefone</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.telefone}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.email}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Tipo</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.tipo}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Marca</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.marca}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Problema</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.problema}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Inicio</span>
+        </div>
+        <input type="datetime-local" class="form-control" value={{employee.inicio}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Fim</span>
+        </div>
+        <input type="datetime-local" class="form-control" value={{employee.fim}}>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Status</span>
+        </div>
+        <input type="text" class="form-control" value={{employee.pendente_fl}} >
+    </div>
+
+    <button class="btn btn-secondary" type="button" (click)="voltar()" style="margin-left: 10px;">Voltar</button>
+
+</div>
